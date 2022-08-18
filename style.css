@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Space Mono";
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(185, 41%, 84%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: hsl(183, 100%, 15%);
+    text-transform: uppercase;
+    padding-bottom: 5%;
+    letter-spacing: 8px;
+    font-size: 24px;
+}
+
+input {
+    border: 0px solid;
+    background-color: hsl(189, 41%, 97%);
+    height: 3rem;
+    border-radius: 5px;
+    text-align: right;
+}
+
+label {
+    padding-bottom: 2%;
+}
+
+.container {
+    width: 80%;
+    height: 40%;
+    display: flex;
+    border: 0px solid;
+    background-color: white;
+    padding: 3%;
+    border-radius: 20px;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    justify-content: space-evenly;
+    color: hsl(186, 14%, 43%);
+    margin-right: 2%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 0;
+}
+
+.bill-amount-logo {
+    padding: 0 10px;
+    background: url(images/icon-dollar.svg) no-repeat left;
+    background-color: hsl(189, 41%, 97%);
+    background-origin: content-box;
+    
+}
+
+.people-amount-logo {
+    padding: 0 10px;
+    background: url(images/icon-person.svg) no-repeat left;
+    background-color: hsl(189, 41%, 97%);
+    background-origin: content-box;
+}
+
+.percent-tip {
+    display: flex;
+    flex-direction: column;
+}
+
+.percent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 50px;
+    row-gap: 7%;
+    column-gap: 5%;
+    font-size: 24px;
+}
+
+.tip-button {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.tip-button:hover {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+.zeroTip {
+    background-color: hsl(189, 41%, 97%);
+    color:hsl(183, 100%, 15%);
+}
+
+#0:hover {
+    background-color: hsl(172, 67%, 45%);
+    color:hsl(189, 41%, 97%);
+}
+
+
+/* Section 2 */
+
+
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background-color: hsl(183, 100%, 15%);
+    margin-left: 2%;
+    border-radius: 15px;
+}
+
+.section2-container {
+    padding: 5%;
+    height: 100%;
+}
+
+.amount {
+    display: flex;
+    justify-content: space-between;
+}
+
+.amount h2 {
+    color: hsl(172, 67%, 45%);
+    font-size: 3rem;
+}
+
+.amount p {
+    color: hsl(189, 41%, 97%);
+}
+
+.amount span {
+    color: hsl(186, 14%, 43%);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    border: 0px solid ;
+    background-color: hsl(186, 14%, 43%, 0.48);
+    padding: 3% 10%;
+    text-transform: uppercase;
+    color: rgb(94, 122, 125);
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    top: 60px;
+}
+
+.button:hover {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+.buttonClicked {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+/* Mobile Responsive */
+
+@media(max-width: 754px) {
+    html {
+        font-size: 70%;
+    }
+
+    
+}
+
+@media(max-width: 589px) {
+    html {
+        font-size: 70%;
+    }
+
+    .container {
+        height: 75%;
+        flex-direction: column;
+    }
+
+    .section1 {
+        width: 100%;
+        height: 70%;
+    }
+
+    .section2 {
+        width: 100%;
+        height: 30%;
+    }
+
+    .button {
+        position: relative;
+        top: 10px;
+    }
+
+    .form {
+        padding: 0;
+    }
+
+    input {
+        height: 5rem;
+    }
+    
+    label {
+        padding-bottom: 2%;
+    }
+    
+}
+
+
+
